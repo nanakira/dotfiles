@@ -18,6 +18,20 @@ HISTFILE=~/.zsh_history
 autoload -Uz compinit
 compinit
 
+# Directory name as a cd command
+setopt auto_cd
+
+# Lazy directory up
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Directory stack
+setopt auto_pushd
+setopt pushd_ignore_dups
+
+# Ignore duplicated history
+setopt hist_ignore_all_dups
+
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
