@@ -1,8 +1,9 @@
 # Set up the prompt
 
-autoload -Uz promptinit
-promptinit
-prompt adam1
+### Use antigen theme instead
+#autoload -Uz promptinit
+#promptinit
+#prompt adam1
 
 setopt histignorealldups sharehistory
 
@@ -56,3 +57,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+### Include antigen
+source ~/.zshrc.antigen
