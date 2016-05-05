@@ -63,3 +63,9 @@
 ;;; メニューバーとツールバーを消す
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+
+;;; Theme
+(load-theme 'tsdh-dark t)
+
+;;; Font
+(set-frame-font "源ノ角ゴシック Code JP R-14")
