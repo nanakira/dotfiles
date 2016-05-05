@@ -39,8 +39,9 @@
 ;;; ミニバッファ履歴を次回Emacs起動時にも保存する
 (savehist-mode 1)
 
-;;; シェルに合わせるため、C-hは後退に割り当てる
+;;; Key binds
 (global-set-key (kbd "C-h") 'delete-backward-char)
+(global-set-key (kbd "C-t") 'other-window)
 
 ;;; モードラインに時刻を表示する
 (display-time)
