@@ -4,6 +4,10 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
+(package-install 'go-autocomplete)
+(package-install 'go-eldoc)
+(package-install 'go-mode)
+
 ;;; 右から左に読む言語に対応させないことで描画高速化
 (setq-default bidi-display-reordering nil)
 
