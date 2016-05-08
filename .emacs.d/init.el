@@ -73,3 +73,5 @@
 
 ;;; Font
 (set-frame-font "源ノ角ゴシック Code JP R-14")
+
+(setq default-tab-width 4)
