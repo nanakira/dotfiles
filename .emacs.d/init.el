@@ -4,6 +4,7 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
+(package-install 'auto-complete)
 (package-install 'go-autocomplete)
 (package-install 'go-eldoc)
 (package-install 'go-mode)
@@ -100,6 +101,9 @@
 ;;; インデントにTABを使わないようにする
 (setq-default indent-tabs-mode nil)
 
+;;; auto-complete
+(require 'auto-complete-config)
+(ac-config-default)
 
 ;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ;>> KEY BINDS
