@@ -5,5 +5,7 @@
 .emacs.d/elpa/
 .emacs.d/history
 .emacs.d/places
+.emacs.d/.recentf
+.emacs.d/ac-comphist.dat
 
 
