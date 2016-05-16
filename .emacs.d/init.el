@@ -6,6 +6,7 @@
 
 (package-install 'recentf-ext)
 (package-install 'auto-complete)
+(package-install 'smartparens)
 (package-install 'go-autocomplete)
 (package-install 'go-eldoc)
 (package-install 'go-mode)
@@ -112,6 +113,7 @@
 ;;; 行番号・桁番号を表示する
 (line-number-mode 1)
 (column-number-mode 1)
+(global-linum-mode t)
 
 ;;; 釣合う括弧をハイライトする
 (show-paren-mode 1)
@@ -135,6 +137,10 @@
 ;;; auto-complete
 (require 'auto-complete-config)
 (ac-config-default)
+
+;;; smart parens
+(require 'smartparens-config)
+(smartparens-global-mode t)
 
 ;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ;>> KEY BINDS
