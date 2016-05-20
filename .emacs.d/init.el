@@ -7,6 +7,7 @@
 (package-install 'recentf-ext)
 (package-install 'auto-complete)
 (package-install 'smartparens)
+(package-install 'anzu)
 (package-install 'go-autocomplete)
 (package-install 'go-eldoc)
 (package-install 'go-mode)
@@ -117,6 +118,13 @@
 
 ;;; 釣合う括弧をハイライトする
 (show-paren-mode 1)
+
+;;; anzu
+(global-anzu-mode +1)
+(custom-set-variables
+ '(anzu-mode-lighter "")
+ '(anzu-deactivate-region t)
+ '(anzu-search-threshold 1000))
 
 ;;; Tab width 4
 (setq default-tab-width 4)
