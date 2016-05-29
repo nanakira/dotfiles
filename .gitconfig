@@ -1,0 +1,9 @@
+[include]
+	path = .gitconfig.local
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+	safecrlf = false
+	excludesfile = ~/.gitignore
+
