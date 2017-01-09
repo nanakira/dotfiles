@@ -18,7 +18,6 @@ function global:prompt {
 
     # Limit path length up to maxPathLength
     $maxPathLength = 40
-    $curPath = $ExecutionContext.SessionState.Path.CurrentLocation.Path
     if ($curPath.Length -gt $maxPathLength) {
         $curPath = '...' + $curPath.SubString($curPath.Length - $maxPathLength + 3)
     }
