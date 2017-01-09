@@ -9,4 +9,5 @@
 .emacs.d/.recentf
 .emacs.d/ac-comphist.dat
 
+PowerShell/autoload/local.ps1
 
