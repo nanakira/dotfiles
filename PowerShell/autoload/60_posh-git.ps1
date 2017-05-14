@@ -3,7 +3,7 @@ if(Test-Path Function:\Prompt) {Rename-Item Function:\Prompt PrePoshGitPrompt -F
 
 # Directly import poshgit module instead of calling profile.example.ps1
 # (Original) . 'C:\ChocoPackages\poshgit\dahlbyk-posh-git-f22a92d\profile.example.ps1'
-Import-Module 'C:\ChocoPackages\poshgit\dahlbyk-posh-git-7d93c81\src\posh-git'
+Import-Module 'C:\ChocoPackages\poshgit\dahlbyk-posh-git-a4faccd\src\posh-git'
 
 Start-SshAgent -Quiet
 
