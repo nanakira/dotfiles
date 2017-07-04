@@ -1,3 +1,5 @@
+. ~/.config/fish/local.fish
+
 set -x GOROOT /usr/lib/go-1.8
 set -x GOPATH $HOME
 set -x PATH $HOME/bin $PATH
