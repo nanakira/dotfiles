@@ -1,7 +1,10 @@
-[include]
-	path = .gitconfig.local
+[user]
+	name = nanakira
+	email = nanakira@users.noreply.github.com
+
 [color]
 	ui = auto
+
 [core]
 	autocrlf = input
 	safecrlf = false
@@ -9,3 +12,9 @@
 
 [ghq]
 	root = ~/src
+
+[include]
+	path = .gitconfig.local
+
+[includeIf "gitdir:00work/**"]
+	path = .gitconfig.work
