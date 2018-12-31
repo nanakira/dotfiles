@@ -5,6 +5,7 @@
 *.sublime-project
 *.sublime-workspace
 *.code-workspace
+.vscode/
 
 .emacs.d/auto-save-list/
 .emacs.d/elpa/
@@ -19,4 +20,6 @@ PowerShell/autoload/local.ps1
 
 # Python
 venv/
+__pycache__/
+.pytest_cache/
 
